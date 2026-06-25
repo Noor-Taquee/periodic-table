@@ -2,7 +2,7 @@
   "name": "periodic-table",
   "version": "1.0.0",
   "description": "",
-  "main": "sw.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/Noor-Taquee/Periodic-Table/issues"
   },
-  "homepage": "https://github.com/Noor-Taquee/Periodic-Table#readme"
+  "homepage": "https://github.com/Noor-Taquee/Periodic-Table#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.5.0",
+    "globals": "^17.7.0",
+    "prettier": "^3.8.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0",
+    "vite": "^8.1.0"
+  }
 }
