@@ -1,9 +1,9 @@
 {
-    "name": "Periodic Table",
-    "short_name": "Periodic Table",
-    "theme_color": "#e1f0fa",
-    "background_color": "#e1f0fa",
-    "display": "standalone",
+  "name": "Periodic Table",
+  "short_name": "Periodic Table",
+  "theme_color": "#e1f0fa",
+  "background_color": "#e1f0fa",
+  "display": "standalone",
   "icons": [
     {
       "src": "logo.svg",
