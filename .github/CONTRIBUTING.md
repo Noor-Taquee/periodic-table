@@ -22,7 +22,7 @@ cd Periodic-Table
 ```bash
 git checkout master
 git pull origin master
-git checkout -b feature/<your-change>
+git checkout -b <your-username>/<feature or change>
 ```
 
 - Install dependencies
