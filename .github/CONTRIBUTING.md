@@ -13,8 +13,8 @@ Thank you for your interest in contributing to this project.
 - Fork the repository.
 
 ```bash
-git clone https://github.com/Noor-Taquee/Periodic-Table.git
-cd Periodic-Table
+git clone https://github.com/Noor-Taquee/periodic-table.git
+cd periodic-table
 ```
 
 - Create a branch for your change.
