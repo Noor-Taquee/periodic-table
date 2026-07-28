@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Noor-Taquee/Periodic-Table.git"
+    "url": "git+https://github.com/Noor-Taquee/periodic-table.git"
   },
   "bugs": {
-    "url": "https://github.com/Noor-Taquee/Periodic-Table/issues"
+    "url": "https://github.com/Noor-Taquee/periodic-table/issues"
   },
-  "homepage": "https://github.com/Noor-Taquee/Periodic-Table#readme",
+  "homepage": "https://github.com/Noor-Taquee/periodic-table#readme",
   "dependencies": {
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
