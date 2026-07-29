@@ -1,4 +1,5 @@
 import "./style.css";
+import "./colors.css";
 
 import { useEffect, useState } from "react";
 import { type TriadsData, loadElements } from "./data";
