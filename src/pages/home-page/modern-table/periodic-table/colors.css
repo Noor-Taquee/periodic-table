@@ -1,4 +1,4 @@
-:root {
+#modern-periodic-table {
   --solid-bg: #0060f025;
   --solid-color: #0060f0;
 
@@ -51,99 +51,93 @@
   --actinide-color: #c73200;
 }
 
-/* #region MARK: by category 
-*/
-.by-category .category-alkali-metal {
-  --primary-cell-color: var(--alkali-metal-color);
-  --secondary-cell-color: var(--alkali-metal-bg);
+.by-category {
+  .category-alkali-metal {
+    --primary-cell-color: var(--alkali-metal-color);
+    --secondary-cell-color: var(--alkali-metal-bg);
+  }
+
+  .category-alkaline-earth-metal {
+    --primary-cell-color: var(--alkaline-earth-metal-color);
+    --secondary-cell-color: var(--alkaline-earth-metal-bg);
+  }
+
+  .category-transition-metal {
+    --primary-cell-color: var(--transition-metal-color);
+    --secondary-cell-color: var(--transition-metal-bg);
+  }
+
+  .category-post-transition-metal {
+    --primary-cell-color: var(--post-transition-metal-color);
+    --secondary-cell-color: var(--post-transition-metal-bg);
+  }
+
+  .category-metalloid {
+    --primary-cell-color: var(--metalloid-color);
+    --secondary-cell-color: var(--metalloid-bg);
+  }
+
+  .category-reactive-nonmetal {
+    --primary-cell-color: var(--reactive-nonmetal-color);
+    --secondary-cell-color: var(--reactive-nonmetal-bg);
+  }
+
+  .category-halogen {
+    --primary-cell-color: var(--halogen-color);
+    --secondary-cell-color: var(--halogen-bg);
+  }
+
+  .category-noble-gas {
+    --primary-cell-color: var(--noble-gas-color);
+    --secondary-cell-color: var(--noble-gas-bg);
+  }
+
+  .category-lanthanide {
+    --primary-cell-color: var(--lanthanide-color);
+    --secondary-cell-color: var(--lanthanide-bg);
+  }
+
+  .category-actinide {
+    --primary-cell-color: var(--actinide-color);
+    --secondary-cell-color: var(--actinide-bg);
+  }
 }
 
-.by-category .category-alkaline-earth-metal {
-  --primary-cell-color: var(--alkaline-earth-metal-color);
-  --secondary-cell-color: var(--alkaline-earth-metal-bg);
+.by-block {
+  .block-s {
+    --primary-cell-color: var(--s-block-color);
+    --secondary-cell-color: var(--s-block-bg);
+  }
+
+  .block-p {
+    --primary-cell-color: var(--p-block-color);
+    --secondary-cell-color: var(--p-block-bg);
+  }
+
+  .block-d {
+    --primary-cell-color: var(--d-block-color);
+    --secondary-cell-color: var(--d-block-bg);
+  }
+
+  .block-f {
+    --primary-cell-color: var(--f-block-color);
+    --secondary-cell-color: var(--f-block-bg);
+  }
 }
 
-.by-category .category-transition-metal {
-  --primary-cell-color: var(--transition-metal-color);
-  --secondary-cell-color: var(--transition-metal-bg);
+.by-state {
+  .state-solid {
+    --primary-cell-color: var(--solid-color);
+    --secondary-cell: var(--solid-bg);
+  }
+
+  .state-liquid {
+    --primary-cell-color: var(--liquid-color);
+    --secondary-cell: var(--liquid-bg);
+  }
+
+  .state-gas {
+    --primary-cell-color: var(--gas-color);
+    --secondary-cell: var(--gas-bg);
+  }
 }
-
-.by-category .category-post-transition-metal {
-  --primary-cell-color: var(--post-transition-metal-color);
-  --secondary-cell-color: var(--post-transition-metal-bg);
-}
-
-.by-category .category-metalloid {
-  --primary-cell-color: var(--metalloid-color);
-  --secondary-cell-color: var(--metalloid-bg);
-}
-
-.by-category .category-reactive-nonmetal {
-  --primary-cell-color: var(--reactive-nonmetal-color);
-  --secondary-cell-color: var(--reactive-nonmetal-bg);
-}
-
-.by-category .category-halogen {
-  --primary-cell-color: var(--halogen-color);
-  --secondary-cell-color: var(--halogen-bg);
-}
-
-.by-category .category-noble-gas {
-  --primary-cell-color: var(--noble-gas-color);
-  --secondary-cell-color: var(--noble-gas-bg);
-}
-
-.by-category .category-lanthanide {
-  --primary-cell-color: var(--lanthanide-color);
-  --secondary-cell-color: var(--lanthanide-bg);
-}
-
-.by-category .category-actinide {
-  --primary-cell-color: var(--actinide-color);
-  --secondary-cell-color: var(--actinide-bg);
-}
-
-/* #endregion by category */
-
-/* #region MARK: by block 
-*/
-.by-block .block-s {
-  --primary-cell-color: var(--s-block-color);
-  --secondary-cell-color: var(--s-block-bg);
-}
-
-.by-block .block-p {
-  --primary-cell-color: var(--p-block-color);
-  --secondary-cell-color: var(--p-block-bg);
-}
-
-.by-block .block-d {
-  --primary-cell-color: var(--d-block-color);
-  --secondary-cell-color: var(--d-block-bg);
-}
-
-.by-block .block-f {
-  --primary-cell-color: var(--f-block-color);
-  --secondary-cell-color: var(--f-block-bg);
-}
-
-/* #endregion by block*/
-
-/* #region MARK: by state 
-*/
-.by-state .state-solid {
-  --primary-cell-color: var(--solid-color);
-  --secondary-cell: var(--solid-bg);
-}
-
-.by-state .state-liquid {
-  --primary-cell-color: var(--liquid-color);
-  --secondary-cell: var(--liquid-bg);
-}
-
-.by-state .state-gas {
-  --primary-cell-color: var(--gas-color);
-  --secondary-cell: var(--gas-bg);
-}
-
-/* #endregion by state*/
