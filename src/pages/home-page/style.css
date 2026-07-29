@@ -1,0 +1,45 @@
+.element-table {
+  --element-size-scale: 1;
+  --element-atomic-number-scale: 1;
+  --element-symbol-scale: 1;
+  --element-name-scale: 1;
+
+  --element-cell-size: 70px;
+
+  --element-gap: 2px;
+
+  flex-shrink: 0;
+  width: 100%;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+
+  background-color: var(--absolute-bg);
+}
+
+.table-selector-dropdown {
+  position: absolute;
+  left: 100px;
+  top: 20px;
+
+  width: fit-content;
+  height: fit-content;
+
+  padding: 4px;
+
+  border: none;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  background-color: var(--secondary-bg);
+}
