@@ -20,7 +20,7 @@ export function ModernTable({ route }: ModernTableProps) {
   }
 
   return (
-    <div id="modern-table">
+    <div className="element-table" id="modern-table">
       <PeriodicTable onSelectElement={setSelectedElement} />
       {selectedElement && <InfoPanel element={selectedElement} />}
     </div>
