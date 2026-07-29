@@ -1,0 +1,21 @@
+.toggle-btn {
+  --toggle-btn-size: 45px;
+
+  cursor: pointer;
+  touch-action: manipulation;
+
+  height: var(--toggle-btn-size);
+  width: var(--toggle-btn-size);
+
+  border: none;
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  background-color: var(--secondary-bg);
+  i {
+    color: var(--primary-text-color);
+    font-size: var(--toggle-icon-size);
+  }
+}
