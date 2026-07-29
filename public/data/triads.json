@@ -1,0 +1,104 @@
+{
+  "triads": [
+    {
+      "name": "Alkali metals",
+      "elements": [
+        {
+          "name": "Lithium",
+          "symbol": "Li",
+          "mass": 6.9
+        },
+        {
+          "name": "Sodium",
+          "symbol": "Na",
+          "mass": 23
+        },
+        {
+          "name": "Potassium",
+          "symbol": "K",
+          "mass": 39.1
+        }
+      ]
+    },
+    {
+      "name": "Alkaline Earths",
+      "elements": [
+        {
+          "name": "Calcium",
+          "symbol": "Ca",
+          "mass": 40.1
+        },
+        {
+          "name": "Strontium",
+          "symbol": "Sr",
+          "mass": 87.6
+        },
+        {
+          "name": "Barium",
+          "symbol": "Ba",
+          "mass": 137.7
+        }
+      ]
+    },
+    {
+      "name": "Halogens",
+      "elements": [
+        {
+          "name": "Chlorine",
+          "symbol": "Cl",
+          "mass": 35.5
+        },
+        {
+          "name": "Bromine",
+          "symbol": "Br",
+          "mass": 79.9
+        },
+        {
+          "name": "Iodine",
+          "symbol": "I",
+          "mass": 126.9
+        }
+      ]
+    },
+    {
+      "name": "Chalcogens",
+      "elements": [
+        {
+          "name": "Sulfur",
+          "symbol": "S",
+          "mass": 32.1
+        },
+        {
+          "name": "Selenium",
+          "symbol": "Se",
+          "mass": 79.0
+        },
+        {
+          "name": "Tellurium",
+          "symbol": "Te",
+          "mass": 127.6
+        }
+      ]
+    },
+    {
+      "name": "Iron Group",
+      "elements": [
+        {
+          "name": "Iron",
+          "symbol": "Fe",
+          "mass": 55.8
+        },
+        {
+          "name": "Cobalt",
+          "symbol": "Co",
+          "mass": 58.9
+        },
+        {
+          "name": "Nickel",
+          "symbol": "Ni",
+          "mass": 58.7
+        }
+      ]
+    }
+  ]
+}
