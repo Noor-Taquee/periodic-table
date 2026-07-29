@@ -1,0 +1,16 @@
+.option-btn {
+  width: 100%;
+  height: fit-content;
+  padding: 8px;
+
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+
+  background-color: transparent;
+
+  &:hover {
+    background-color: var(--primary-bg);
+  }
+}
