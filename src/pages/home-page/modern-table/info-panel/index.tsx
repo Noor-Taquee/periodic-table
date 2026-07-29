@@ -24,7 +24,7 @@ export function InfoPanel({ element }: InfoPanelProps) {
           </span>
         </p>
         <p className="info-body-text">
-          Mass Number:
+          Mass:
           <span id="mass-number-text" className="info-body-values">
             {element.mass}
           </span>
