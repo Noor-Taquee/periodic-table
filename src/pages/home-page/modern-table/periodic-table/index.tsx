@@ -37,7 +37,7 @@ export function PeriodicTable({ onSelectElement }: PeriodicTableProps) {
   const data = elements as TableData;
 
   return (
-    <div className="by-category" id="periodic-table">
+    <div className="by-category" id="modern-periodic-table">
       <MainTable data={data} onSelectElement={onSelectElement} />
       <SecondTable data={data} onSelectElement={onSelectElement} />
     </div>
