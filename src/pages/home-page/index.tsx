@@ -1,6 +1,13 @@
-import { useEffect } from "react";
+import "./style.css";
+
+import { useEffect, useState } from "react";
 import { changeHash, type InnerRoute } from "../../utils/router";
-import { ModernTable } from "./modern-table";
+
+import ToggleBtn from "../../components/toggle-btn";
+import OptionBtn from "../../components/option-btn";
+
+import ModernTable from "./modern-table";
+import TriadsTable from "./triads";
 
 const routes = ["", "modern", "mandeleevs", "triads", "octaves"];
 
@@ -9,6 +16,8 @@ interface HomePageProps {
 }
 
 export function HomePage({ route }: HomePageProps) {
+  const [dropdownOpen, setDropdown] = useState(false);
+
   const [location, attribute] = route;
 
   const panel = location[0] || "modern";
@@ -16,7 +25,7 @@ export function HomePage({ route }: HomePageProps) {
   const innerRoute: InnerRoute = [location.slice(1), attribute];
 
   useEffect(() => {
-    const panel = location[0];
+    const panel = location[0] || "";
 
     if (!routes.includes(panel)) {
       changeHash("home/modern");
@@ -28,13 +37,39 @@ export function HomePage({ route }: HomePageProps) {
     <div id="home-page" className="app-panel">
       <div className="panel-bar">
         <div className="panel-name-div">
-          <h1 className="panel-names">Periodic Table</h1>
+          <h1 className="panel-names">
+            {panel == "modern" && "Modern Periodic Table"}
+            {panel == "triads" && "Döbereiner's Triads"}
+          </h1>
+          <ToggleBtn
+            title="Change table"
+            icon="arrows-left-right"
+            variant="bold"
+            onClick={() => setDropdown((prev) => !prev)}
+          />
+          {dropdownOpen && (
+            <div className="table-selector-dropdown">
+              <OptionBtn
+                text="Modern"
+                onClick={() => {
+                  window.location.hash = "home/modern";
+                  setDropdown(false);
+                }}
+              />
+              <OptionBtn
+                text="Triads"
+                onClick={() => {
+                  window.location.hash = "home/triads";
+                  setDropdown(false);
+                }}
+              />
+            </div>
+          )}
         </div>
       </div>
       <div className="panel-content">
-        {(panel == "" || panel == "modern") && (
-          <ModernTable route={innerRoute} />
-        )}
+        {panel == "modern" && <ModernTable route={innerRoute} />}
+        {panel == "triads" && <TriadsTable />}
       </div>
     </div>
   );
