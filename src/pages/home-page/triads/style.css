@@ -1,0 +1,80 @@
+#triads-table {
+  --alkali-metals-bg: #d6002425;
+  --alkali-metals-color: #d60024;
+
+  --alkaline-earths-bg: #6232ec25;
+  --alkaline-earths-color: #6232ec;
+
+  --halogens-bg: #94570025;
+  --halogens-color: #945700;
+
+  --chalcogens-bg: #00758c25;
+  --chalcogens-color: #00758c;
+
+  --iron-group-bg: #002c0025;
+  --iron-group-color: #002c00;
+
+  --element-cell-gap: 2px;
+
+  gap: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+.triads-group {
+  height: fit-content;
+  width: fit-content;
+
+  padding: 10px;
+
+  border: 1px solid var(--triads-group-bg);
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &.alkali-metals {
+    --triads-group-bg: var(--alkali-metals-bg);
+    --triads-group-color: var(--alkali-metals-color);
+  }
+  &.alkaline-earths {
+    --triads-group-bg: var(--alkaline-earths-bg);
+    --triads-group-color: var(--alkaline-earths-color);
+  }
+  &.halogens {
+    --triads-group-bg: var(--halogens-bg);
+    --triads-group-color: var(--halogens-color);
+  }
+  &.chalcogens {
+    --triads-group-bg: var(--chalcogens-bg);
+    --triads-group-color: var(--chalcogens-color);
+  }
+  &.iron-group {
+    --triads-group-bg: var(--iron-group-bg);
+    --triads-group-color: var(--iron-group-color);
+  }
+}
+
+.triads-group-title {
+  margin: 8px;
+  font: 400 20px "Inter";
+  color: var(--triads-group-color);
+}
+
+.triads-group-elements {
+  height: fit-content;
+  height: 70px;
+  width: fit-content;
+
+  display: flex;
+  gap: var(--element-cell-gap);
+
+  .element-cell {
+    --primary-cell-color: var(--triads-group-color);
+    --secondary-cell-color: var(--triads-group-bg);
+  }
+}
