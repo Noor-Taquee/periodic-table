@@ -9,7 +9,7 @@ import OptionBtn from "../../components/option-btn";
 import ModernTable from "./modern-table";
 import TriadsTable from "./triads";
 
-const routes = ["", "modern", "mandeleevs", "triads", "octaves"];
+const routes = ["modern", "mandeleevs", "triads", "octaves"];
 
 interface HomePageProps {
   route: InnerRoute;
