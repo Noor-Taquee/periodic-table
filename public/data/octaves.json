@@ -1,0 +1,86 @@
+{
+  "musicalNotes": {
+    "western": ["do", "re", "mi", "fa", "sol", "la", "ti"],
+    "indian": ["sa", "re", "ga", "ma", "pa", "da", "ni"]
+  },
+  "octaves": [
+    {
+      "noteIndex": 0,
+      "elements": [
+        { "symbol": "H", "name": "Hydrogen", "mass": 1.0 },
+        { "symbol": "F", "name": "Fluorine", "mass": 19.0 },
+        { "symbol": "Cl", "name": "Chlorine", "mass": 35.5 },
+        {
+          "symbol": "Co/Ni",
+          "name": "Cobalt & Nickel",
+          "mass": 58.9,
+          "isSlotDouble": true
+        },
+        { "symbol": "Br", "name": "Bromine", "mass": 79.9 }
+      ]
+    },
+    {
+      "noteIndex": 1,
+      "elements": [
+        { "symbol": "Li", "name": "Lithium", "mass": 6.9 },
+        { "symbol": "Na", "name": "Sodium", "mass": 23.0 },
+        { "symbol": "K", "name": "Potassium", "mass": 39.1 },
+        { "symbol": "Cu", "name": "Copper", "mass": 63.5 },
+        { "symbol": "Rb", "name": "Rubidium", "mass": 85.5 }
+      ]
+    },
+    {
+      "noteIndex": 2,
+      "elements": [
+        { "symbol": "Be", "name": "Beryllium", "mass": 9.0 },
+        { "symbol": "Mg", "name": "Magnesium", "mass": 24.3 },
+        { "symbol": "Ca", "name": "Calcium", "mass": 40.1 },
+        { "symbol": "Zn", "name": "Zinc", "mass": 65.4 },
+        { "symbol": "Sr", "name": "Strontium", "mass": 87.6 }
+      ]
+    },
+    {
+      "noteIndex": 3,
+      "elements": [
+        { "symbol": "B", "name": "Boron", "mass": 10.8 },
+        { "symbol": "Al", "name": "Aluminium", "mass": 27.0 },
+        { "symbol": "Cr", "name": "Chromium", "mass": 52.0 },
+        { "symbol": "Y", "name": "Yttrium", "mass": 88.9 },
+        {
+          "symbol": "Ce/La",
+          "name": "Cerium & Lanthanum",
+          "mass": 139.0,
+          "isSlotDouble": true
+        }
+      ]
+    },
+    {
+      "noteIndex": 4,
+      "elements": [
+        { "symbol": "C", "name": "Carbon", "mass": 12.0 },
+        { "symbol": "Si", "name": "Silicon", "mass": 28.1 },
+        { "symbol": "Ti", "name": "Titanium", "mass": 47.9 },
+        { "symbol": "In", "name": "Indium", "mass": 114.8 },
+        { "symbol": "Zr", "name": "Zirconium", "mass": 91.2 }
+      ]
+    },
+    {
+      "noteIndex": 5,
+      "elements": [
+        { "symbol": "N", "name": "Nitrogen", "mass": 14.0 },
+        { "symbol": "P", "name": "Phosphorus", "mass": 31.0 },
+        { "symbol": "Mn", "name": "Manganese", "mass": 54.9 },
+        { "symbol": "As", "name": "Arsenic", "mass": 74.9 }
+      ]
+    },
+    {
+      "noteIndex": 6,
+      "elements": [
+        { "symbol": "O", "name": "Oxygen", "mass": 16.0 },
+        { "symbol": "S", "name": "Sulfur", "mass": 32.1 },
+        { "symbol": "Fe", "name": "Iron", "mass": 55.8 },
+        { "symbol": "Se", "name": "Selenium", "mass": 79.0 }
+      ]
+    }
+  ]
+}
