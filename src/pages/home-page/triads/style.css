@@ -1,6 +1,4 @@
 #triads-table {
-  --element-cell-gap: 2px;
-
   gap: 20px;
 
   display: grid;
@@ -31,11 +29,10 @@
 
 .triads-group-elements {
   height: fit-content;
-  height: 70px;
   width: fit-content;
 
   display: flex;
-  gap: var(--element-cell-gap);
+  gap: calc(var(--element-gap) + (2 * var(--element-outline-width)));
 
   .element-cell {
     --primary-cell-color: var(--triads-group-color);

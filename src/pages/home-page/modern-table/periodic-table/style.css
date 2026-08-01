@@ -15,12 +15,13 @@
 
 .table-piece {
   --table-width: calc(
-    (18 * var(--element-cell-size)) + (17 * var(--element-gap))
+    (18 * var(--element-cell-size)) + (17 * var(--element-gap)) +
+      (18 * 2 * var(--element-outline-width))
   );
 
   width: var(--table-width);
 
-  zoom: calc((100vw - 10px) / var(--table-width));
+  zoom: calc((100vw - 2 * var(--table-padding)) / var(--table-width));
 
   display: grid;
   gap: var(--element-gap);
