@@ -1,4 +1,8 @@
 .element-table {
+  /*
+  Common styles of all element tables.
+  */
+
   --element-size-scale: 1;
   --element-atomic-number-scale: 1;
   --element-symbol-scale: 1;
@@ -6,7 +10,11 @@
 
   --element-cell-size: 70px;
 
+  --element-outline-width: 2px;
+
   --element-gap: 2px;
+
+  --table-padding: 5px;
 
   flex-shrink: 0;
   width: 100%;
@@ -14,12 +22,11 @@
   overflow-y: hidden;
   overflow-x: scroll;
 
-  padding: 5px;
+  padding: var(--table-padding);
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
 
   background-color: var(--absolute-bg);
 }
