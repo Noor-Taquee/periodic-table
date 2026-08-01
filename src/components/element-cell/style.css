@@ -2,21 +2,26 @@
   cursor: pointer;
   touch-action: manipulation;
 
+  height: var(--element-cell-size);
+  width: var(--element-cell-size);
   aspect-ratio: 1 / 1;
 
   overflow: hidden;
 
+  margin: var(--element-outline-width);
   padding: 5px;
 
-  border-width: 0px;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: var(--primary-cell-color);
+  border: none;
+  border-radius: 6px;
+
+  outline-width: 0px;
+  outline-style: solid;
+  outline-color: var(--primary-cell-color);
 
   background-color: var(--secondary-cell-color);
 
   &:hover {
-    border-width: 1px;
+    outline-width: var(--element-outline-width);
   }
 
   p {
