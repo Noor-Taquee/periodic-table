@@ -1,0 +1,59 @@
+#octaves-table {
+  --note-1-color: #003355;
+  --note-1-bg: #00335525;
+
+  --note-2-color: #cd1d5e;
+  --note-2-bg: #cd1d5e25;
+
+  --note-3-color: #3f374f;
+  --note-3-bg: #3f374f25;
+
+  --note-4-color: #945700;
+  --note-4-bg: #94570025;
+
+  --note-5-color: #6232ec;
+  --note-5-bg: #6232ec25;
+
+  --note-6-color: #0060f0;
+  --note-6-bg: #0060f025;
+
+  --note-7-color: #00758c;
+  --note-7-bg: #00758c25;
+}
+
+.octaves-group {
+  .note-1 {
+    --primary-cell-color: var(--note-1-color);
+    --secondary-cell-color: var(--note-1-bg);
+  }
+
+  .note-2 {
+    --primary-cell-color: var(--note-2-color);
+    --secondary-cell-color: var(--note-2-bg);
+  }
+
+  .note-3 {
+    --primary-cell-color: var(--note-3-color);
+    --secondary-cell-color: var(--note-3-bg);
+  }
+
+  .note-4 {
+    --primary-cell-color: var(--note-4-color);
+    --secondary-cell-color: var(--note-4-bg);
+  }
+
+  .note-5 {
+    --primary-cell-color: var(--note-5-color);
+    --secondary-cell-color: var(--note-5-bg);
+  }
+
+  .note-6 {
+    --primary-cell-color: var(--note-6-color);
+    --secondary-cell-color: var(--note-6-bg);
+  }
+
+  .note-7 {
+    --primary-cell-color: var(--note-7-color);
+    --secondary-cell-color: var(--note-7-bg);
+  }
+}
