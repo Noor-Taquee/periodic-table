@@ -8,6 +8,7 @@ import OptionBtn from "../../components/option-btn";
 
 import ModernTable from "./modern-table";
 import TriadsTable from "./triads";
+import OctavesTable from "./octaves";
 
 const routes = ["modern", "mandeleevs", "triads", "octaves"];
 
@@ -40,6 +41,7 @@ export function HomePage({ route }: HomePageProps) {
           <h1 className="panel-names">
             {panel == "modern" && "Modern Periodic Table"}
             {panel == "triads" && "Döbereiner's Triads"}
+            {panel == "octaves" && "Newland's Octaves"}
           </h1>
           <ToggleBtn
             title="Change table"
@@ -57,6 +59,13 @@ export function HomePage({ route }: HomePageProps) {
                 }}
               />
               <OptionBtn
+                text="Octaves"
+                onClick={() => {
+                  window.location.hash = "home/octaves";
+                  setDropdown(false);
+                }}
+              />
+              <OptionBtn
                 text="Triads"
                 onClick={() => {
                   window.location.hash = "home/triads";
@@ -70,6 +79,7 @@ export function HomePage({ route }: HomePageProps) {
       <div className="panel-content">
         {panel == "modern" && <ModernTable route={innerRoute} />}
         {panel == "triads" && <TriadsTable />}
+        {panel == "octaves" && <OctavesTable />}
       </div>
     </div>
   );
