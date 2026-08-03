@@ -1,0 +1,15 @@
+#octaves-table {
+  --effective-gap: calc(var(--element-gap) + var(--element-outline-width));
+
+  flex-direction: row;
+  gap: var(--effective-gap);
+}
+
+.octaves-group {
+  height: fit-content;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--effective-gap);
+}
