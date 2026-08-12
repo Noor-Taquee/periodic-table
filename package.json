@@ -24,17 +24,17 @@
   },
   "homepage": "https://github.com/Noor-Taquee/periodic-table#readme",
   "dependencies": {
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
   },
   "devDependencies": {
-    "@types/node": "^26.1.2",
+    "@types/node": "26.1.2",
     "@types/react": "19.2.18",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.4",
-    "oxlint": "^1.76.0",
-    "prettier": "^3.9.5",
-    "typescript": "~7.0.2",
-    "vite": "^8.1.1"
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.4",
+    "oxlint": "1.76.0",
+    "prettier": "3.9.5",
+    "typescript": "7.0.2",
+    "vite": "8.1.1"
   }
 }
