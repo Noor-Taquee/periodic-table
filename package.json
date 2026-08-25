@@ -35,6 +35,6 @@
     "oxlint": "1.78.0",
     "prettier": "3.9.6",
     "typescript": "7.0.2",
-    "vite": "8.2.1"
+    "vite": "8.2.2"
   }
 }
