@@ -5,7 +5,7 @@ interface OptionBtnProps {
   onClick: () => any;
 }
 
-export function OptionBtn({ text, onClick }: OptionBtnProps) {
+export function OptionButton({ text, onClick }: OptionBtnProps) {
   return (
     <button className="option-btn" onClick={onClick}>
       {text.length > 0 && <p>{text}</p>}
@@ -13,4 +13,4 @@ export function OptionBtn({ text, onClick }: OptionBtnProps) {
   );
 }
 
-export default OptionBtn;
+export default OptionButton;
