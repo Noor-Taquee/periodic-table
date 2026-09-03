@@ -13,4 +13,9 @@
   &:hover {
     background-color: var(--primary-bg);
   }
+
+  p {
+    text-align: left;
+    font: 400 16px "Inter";
+  }
 }

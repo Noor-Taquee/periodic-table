@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { changeHash, type InnerRoute } from "../../utils/router";
 
 import ToggleBtn from "../../components/toggle-btn";
-import OptionBtn from "../../components/option-btn";
+import OptionButton from "../../components/OptionButton";
 
 import ModernTable from "./modern-table";
 import TriadsTable from "./triads";
@@ -51,21 +51,21 @@ export function HomePage({ route }: HomePageProps) {
           />
           {dropdownOpen && (
             <div className="table-selector-dropdown">
-              <OptionBtn
+              <OptionButton
                 text="Modern"
                 onClick={() => {
                   window.location.hash = "home/modern";
                   setDropdown(false);
                 }}
               />
-              <OptionBtn
+              <OptionButton
                 text="Octaves"
                 onClick={() => {
                   window.location.hash = "home/octaves";
                   setDropdown(false);
                 }}
               />
-              <OptionBtn
+              <OptionButton
                 text="Triads"
                 onClick={() => {
                   window.location.hash = "home/triads";
