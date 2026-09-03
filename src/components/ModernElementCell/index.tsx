@@ -10,7 +10,10 @@ interface ElementCellProps {
 
 const padding = 2;
 
-export function ElementCell({ element, onSelectElement }: ElementCellProps) {
+export function ModernElementCell({
+  element,
+  onSelectElement,
+}: ElementCellProps) {
   let column = Number(element.group);
   let row = Number(element.period);
 
