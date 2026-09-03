@@ -3,7 +3,7 @@ import "./style.css";
 import { useEffect, useState } from "react";
 import { changeHash, type InnerRoute } from "../../utils/router";
 
-import ToggleBtn from "../../components/toggle-btn";
+import ToggleButton from "../../components/ToggleButton";
 import OptionButton from "../../components/OptionButton";
 
 import ModernTable from "./modern-table";
@@ -43,7 +43,7 @@ export function HomePage({ route }: HomePageProps) {
             {panel == "triads" && "Döbereiner's Triads"}
             {panel == "octaves" && "Newland's Octaves"}
           </h1>
-          <ToggleBtn
+          <ToggleButton
             title="Change table"
             icon="arrows-left-right"
             variant="bold"
