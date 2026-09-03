@@ -3,7 +3,7 @@ import "./colors.css";
 
 import { useEffect, useState } from "react";
 import { type TriadsData, loadElements } from "./data";
-import TriadsElementCell from "../../../components/traids-element-cell";
+import TriadsElementCell from "../../../components/TraidsElementCell";
 
 export function TriadsTable() {
   const [elements, setElements] = useState<TriadsData | null>(null);
