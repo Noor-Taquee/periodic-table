@@ -4,7 +4,7 @@ import "./colors.css";
 import { useEffect, useState } from "react";
 import { loadElements, type OctavesData } from "./data";
 
-import OctavesElementCell from "../../../components/octaves-element-cell";
+import OctavesElementCell from "../../../components/OctavesElementCell";
 
 export function OctavesTable() {
   const [data, setData] = useState<OctavesData | null>(null);
