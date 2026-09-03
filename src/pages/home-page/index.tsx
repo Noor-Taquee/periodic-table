@@ -7,7 +7,7 @@ import ToggleButton from "../../components/ToggleButton";
 import OptionButton from "../../components/OptionButton";
 
 import ModernTable from "./modern-table";
-import TriadsTable from "./triads";
+import TriadsTable from "./TriadsTable";
 import OctavesTable from "./octaves";
 
 const routes = ["modern", "mandeleevs", "triads", "octaves"];

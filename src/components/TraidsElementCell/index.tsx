@@ -1,4 +1,4 @@
-import type { TriadsElementData } from "../../pages/home-page/triads/data";
+import type { TriadsElementData } from "../../pages/home-page/TriadsTable/data";
 
 interface ElementCellProps {
   element: TriadsElementData;
