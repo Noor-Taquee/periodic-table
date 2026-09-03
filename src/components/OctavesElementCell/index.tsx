@@ -1,4 +1,4 @@
-import type { OctaveElementData } from "../../pages/home-page/octaves/data";
+import type { OctaveElementData } from "../../pages/home-page/OctavesTable/data";
 
 interface ElementCellProps {
   element: OctaveElementData;
