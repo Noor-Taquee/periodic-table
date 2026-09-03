@@ -25,12 +25,12 @@
   "homepage": "https://github.com/Noor-Taquee/periodic-table#readme",
   "dependencies": {
     "react": "19.2.8",
-    "react-dom": "19.2.7"
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@types/node": "26.4.0",
     "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.3",
+    "@types/react-dom": "19.2.5",
     "@vitejs/plugin-react": "6.1.1",
     "oxlint": "1.80.0",
     "prettier": "3.9.6",
