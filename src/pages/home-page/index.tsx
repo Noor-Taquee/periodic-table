@@ -3,12 +3,12 @@ import "./style.css";
 import { useEffect, useState } from "react";
 import { changeHash, type InnerRoute } from "../../utils/router";
 
-import ToggleBtn from "../../components/toggle-btn";
-import OptionBtn from "../../components/option-btn";
+import ToggleButton from "../../components/ToggleButton";
+import OptionButton from "../../components/OptionButton";
 
 import ModernTable from "./modern-table";
-import TriadsTable from "./triads";
-import OctavesTable from "./octaves";
+import TriadsTable from "./TriadsTable";
+import OctavesTable from "./OctavesTable";
 
 const routes = ["modern", "mandeleevs", "triads", "octaves"];
 
@@ -43,7 +43,7 @@ export function HomePage({ route }: HomePageProps) {
             {panel == "triads" && "Döbereiner's Triads"}
             {panel == "octaves" && "Newland's Octaves"}
           </h1>
-          <ToggleBtn
+          <ToggleButton
             title="Change table"
             icon="arrows-left-right"
             variant="bold"
@@ -51,21 +51,21 @@ export function HomePage({ route }: HomePageProps) {
           />
           {dropdownOpen && (
             <div className="table-selector-dropdown">
-              <OptionBtn
+              <OptionButton
                 text="Modern"
                 onClick={() => {
                   window.location.hash = "home/modern";
                   setDropdown(false);
                 }}
               />
-              <OptionBtn
+              <OptionButton
                 text="Octaves"
                 onClick={() => {
                   window.location.hash = "home/octaves";
                   setDropdown(false);
                 }}
               />
-              <OptionBtn
+              <OptionButton
                 text="Triads"
                 onClick={() => {
                   window.location.hash = "home/triads";
