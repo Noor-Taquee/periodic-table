@@ -10,7 +10,7 @@ interface ElementCellProps {
 
 const padding = 2;
 
-export function ModernElementCell({
+export default function ModernElementCell({
   element,
   onSelectElement,
 }: ElementCellProps) {
