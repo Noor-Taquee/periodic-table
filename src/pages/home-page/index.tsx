@@ -8,7 +8,7 @@ import OptionButton from "../../components/OptionButton";
 
 import ModernTable from "./modern-table";
 import TriadsTable from "./TriadsTable";
-import OctavesTable from "./octaves";
+import OctavesTable from "./OctavesTable";
 
 const routes = ["modern", "mandeleevs", "triads", "octaves"];
 
