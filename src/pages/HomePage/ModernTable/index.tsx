@@ -10,7 +10,7 @@ interface ModernTableProps {
   route?: InnerRoute;
 }
 
-export function ModernTable({ route }: ModernTableProps) {
+export default function ModernTable({ route }: ModernTableProps) {
   const [selectedElement, setSelectedElement] = useState<ElementData | null>(
     null
   );
@@ -26,5 +26,3 @@ export function ModernTable({ route }: ModernTableProps) {
     </div>
   );
 }
-
-export default ModernTable;

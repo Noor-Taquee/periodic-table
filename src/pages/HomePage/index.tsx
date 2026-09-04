@@ -16,7 +16,7 @@ interface HomePageProps {
   route: InnerRoute;
 }
 
-export function HomePage({ route }: HomePageProps) {
+export default function HomePage({ route }: HomePageProps) {
   const [dropdownOpen, setDropdown] = useState(false);
 
   const [location, attribute] = route;
@@ -84,5 +84,3 @@ export function HomePage({ route }: HomePageProps) {
     </div>
   );
 }
-
-export default HomePage;

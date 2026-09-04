@@ -6,7 +6,7 @@ import { loadElements, type OctavesData } from "./data";
 
 import OctavesElementCell from "../../../components/OctavesElementCell";
 
-export function OctavesTable() {
+export default function OctavesTable() {
   const [data, setData] = useState<OctavesData | null>(null);
 
   useEffect(() => {
@@ -30,5 +30,3 @@ export function OctavesTable() {
     </div>
   );
 }
-
-export default OctavesTable;

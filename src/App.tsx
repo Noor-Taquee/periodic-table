@@ -2,7 +2,8 @@ import "./App.css";
 
 import { useEffect, useState } from "react";
 import { changeHash, normalize } from "./utils/router";
-import { HomePage } from "./pages/home-page";
+
+import HomePage from "./pages/HomePage";
 
 const routeTable: string[] = ["", "home", "settings"];
 

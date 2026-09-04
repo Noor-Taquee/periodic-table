@@ -1,11 +1,12 @@
-import type { ElementData } from "../../../../core/data";
 import "./style.css";
+
+import type { ElementData } from "../../../../core/data";
 
 interface InfoPanelProps {
   element: ElementData;
 }
 
-export function InfoPanel({ element }: InfoPanelProps) {
+export default function InfoPanel({ element }: InfoPanelProps) {
   return (
     <div id="info-panel">
       <div id="info-panel-header">
@@ -107,5 +108,3 @@ export function InfoPanel({ element }: InfoPanelProps) {
     </div>
   );
 }
-
-export default InfoPanel;
