@@ -6,7 +6,7 @@ import { changeHash, type InnerRoute } from "../../utils/router";
 import ToggleButton from "../../components/ToggleButton";
 import OptionButton from "../../components/OptionButton";
 
-import ModernTable from "./modern-table";
+import ModernTable from "./ModernTable";
 import TriadsTable from "./TriadsTable";
 import OctavesTable from "./OctavesTable";
 

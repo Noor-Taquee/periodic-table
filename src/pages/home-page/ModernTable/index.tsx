@@ -3,8 +3,8 @@ import type { InnerRoute } from "../../../utils/router";
 
 import type { ElementData } from "../../../core/data";
 
-import InfoPanel from "./info-panel";
-import PeriodicTable from "./periodic-table";
+import InfoPanel from "./InfoPanel";
+import PeriodicTable from "./PeriodicTable";
 
 interface ModernTableProps {
   route?: InnerRoute;
