@@ -2,14 +2,14 @@ import "./style.css";
 import "./colors.css";
 
 import { useState, useEffect } from "react";
-
-import MainTable from "./main-table";
-import SecondTable from "./second-table";
 import {
   loadElement,
   type TableData,
   type ElementData,
 } from "../../../../core/data";
+
+import MainTable from "./MainTable";
+import SecondTable from "./SecondTable";
 
 interface PeriodicTableProps {
   onSelectElement: (element: ElementData | null) => void;
