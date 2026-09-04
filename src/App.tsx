@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage";
 
 const routeTable: string[] = ["", "home", "settings"];
 
-export function App() {
+export default function App() {
   const [panel, setPanel] = useState<string>("home");
   const [innerRoute, setInnerRoute] = useState<[string[], string[]]>([[], []]);
 
@@ -47,5 +47,3 @@ export function App() {
     </>
   );
 }
-
-export default App;
