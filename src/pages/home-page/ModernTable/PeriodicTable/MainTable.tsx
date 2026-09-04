@@ -1,6 +1,6 @@
 import type { ElementData, TableData } from "../../../../core/data";
 
-import { ModernElementCell } from "../../../../components/ModernElementCell";
+import ModernElementCell from "../../../../components/ModernElementCell";
 
 interface MainTableProps {
   data: TableData;
