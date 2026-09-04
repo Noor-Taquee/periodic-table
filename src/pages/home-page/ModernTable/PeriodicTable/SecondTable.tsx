@@ -1,7 +1,6 @@
-import "./style.css";
+import type { ElementData, TableData } from "../../../../core/data";
 
-import type { ElementData, TableData } from "../../../../../core/data";
-import { ModernElementCell } from "../../../../../components/ModernElementCell";
+import { ModernElementCell } from "../../../../components/ModernElementCell";
 
 interface SecondTableProps {
   data: TableData;
@@ -11,7 +10,10 @@ interface SecondTableProps {
 /**
  * Part of the periodic table, containing f block.
  */
-export function SecondTable({ data, onSelectElement }: SecondTableProps) {
+export default function SecondTable({
+  data,
+  onSelectElement,
+}: SecondTableProps) {
   const elements = data.filter((element) => element.block === "f");
 
   return (
@@ -26,5 +28,3 @@ export function SecondTable({ data, onSelectElement }: SecondTableProps) {
     </div>
   );
 }
-
-export default SecondTable;

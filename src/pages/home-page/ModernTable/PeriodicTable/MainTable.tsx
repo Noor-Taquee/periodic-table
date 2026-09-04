@@ -1,7 +1,6 @@
-import "./style.css";
+import type { ElementData, TableData } from "../../../../core/data";
 
-import type { ElementData, TableData } from "../../../../../core/data";
-import { ModernElementCell } from "../../../../../components/ModernElementCell";
+import { ModernElementCell } from "../../../../components/ModernElementCell";
 
 interface MainTableProps {
   data: TableData;
@@ -11,7 +10,7 @@ interface MainTableProps {
 /**
  * Part of the periodic table, containing s, p & d blocks.
  */
-export function MainTable({ data, onSelectElement }: MainTableProps) {
+export default function MainTable({ data, onSelectElement }: MainTableProps) {
   const mainElements = data.filter((element) => element.block !== "f");
 
   return (
@@ -26,5 +25,3 @@ export function MainTable({ data, onSelectElement }: MainTableProps) {
     </div>
   );
 }
-
-export default MainTable;
