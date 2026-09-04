@@ -1,16 +1,12 @@
-import type { OctaveElementData } from "../../pages/home-page/octaves/data";
+import type { TriadsElementData } from "../../pages/home-page/TriadsTable/data";
 
 interface ElementCellProps {
-  element: OctaveElementData;
-  /**
-   * Musical note
-   */
-  note: number;
+  element: TriadsElementData;
 }
 
-export function OctavesElementCell({ element, note }: ElementCellProps) {
+export function TriadsElementCell({ element }: ElementCellProps) {
   return (
-    <div className={`element-cell note-${note}`}>
+    <div className={`element-cell`}>
       <div className="element-info-div">
         <p className="mass-number">{Number(element.mass).toFixed(1)}</p>
       </div>
@@ -22,4 +18,4 @@ export function OctavesElementCell({ element, note }: ElementCellProps) {
   );
 }
 
-export default OctavesElementCell;
+export default TriadsElementCell;

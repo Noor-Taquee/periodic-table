@@ -1,7 +1,7 @@
 import "./style.css";
 
 import type { ElementData, TableData } from "../../../../../core/data";
-import { ElementCell } from "../../../../../components/element-cell";
+import { ModernElementCell } from "../../../../../components/ModernElementCell";
 
 interface SecondTableProps {
   data: TableData;
@@ -17,7 +17,7 @@ export function SecondTable({ data, onSelectElement }: SecondTableProps) {
   return (
     <div className="table-piece" id="second-table">
       {elements.map((element) => (
-        <ElementCell
+        <ModernElementCell
           key={element.symbol}
           element={element}
           onSelectElement={onSelectElement}

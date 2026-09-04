@@ -7,7 +7,7 @@ interface ToggleBtnProps {
   onClick: () => any;
 }
 
-export function ToggleBtn({
+export function ToggleButton({
   icon,
   variant = "regular",
   title,
@@ -20,4 +20,4 @@ export function ToggleBtn({
   );
 }
 
-export default ToggleBtn;
+export default ToggleButton;
