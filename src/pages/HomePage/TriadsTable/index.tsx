@@ -3,9 +3,10 @@ import "./colors.css";
 
 import { useEffect, useState } from "react";
 import { type TriadsData, loadElements } from "./data";
+
 import TriadsElementCell from "../../../components/TraidsElementCell";
 
-export function TriadsTable() {
+export default function TriadsTable() {
   const [elements, setElements] = useState<TriadsData | null>(null);
 
   useEffect(() => {
@@ -34,5 +35,3 @@ export function TriadsTable() {
     </div>
   );
 }
-
-export default TriadsTable;

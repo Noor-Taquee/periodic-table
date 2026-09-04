@@ -15,7 +15,7 @@ interface PeriodicTableProps {
   onSelectElement: (element: ElementData | null) => void;
 }
 
-export function PeriodicTable({ onSelectElement }: PeriodicTableProps) {
+export default function PeriodicTable({ onSelectElement }: PeriodicTableProps) {
   const [elements, setElements] = useState<TableData>();
   const [isLoading, setLoading] = useState(true);
 
@@ -43,5 +43,3 @@ export function PeriodicTable({ onSelectElement }: PeriodicTableProps) {
     </div>
   );
 }
-
-export default PeriodicTable;
