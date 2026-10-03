@@ -1,7 +1,7 @@
 import "./style.css";
 
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import ToggleButton from "../../components/ToggleButton";
 import OptionButton from "../../components/OptionButton";
@@ -13,6 +13,7 @@ export default function HomePage() {
   const [dropdownOpen, setDropdown] = useState(false);
 
   const location = useLocation();
+  const navigate = useNavigate();
 
   const pathParts = location.pathname.split("/").filter(Boolean);
   const panel = pathParts[1] || "modern";
@@ -37,21 +38,21 @@ export default function HomePage() {
               <OptionButton
                 text="Modern"
                 onClick={() => {
-                  window.location.hash = "home/modern";
+                  navigate("/home/modern");
                   setDropdown(false);
                 }}
               />
               <OptionButton
                 text="Octaves"
                 onClick={() => {
-                  window.location.hash = "home/octaves";
+                  navigate("/home/octaves");
                   setDropdown(false);
                 }}
               />
               <OptionButton
                 text="Triads"
                 onClick={() => {
-                  window.location.hash = "home/triads";
+                  navigate("/home/triads");
                   setDropdown(false);
                 }}
               />
