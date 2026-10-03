@@ -25,7 +25,8 @@
   "homepage": "https://github.com/Noor-Taquee/periodic-table#readme",
   "dependencies": {
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@types/node": "26.5.1",
