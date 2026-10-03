@@ -1,49 +1,19 @@
 import "./App.css";
 
-import { useEffect, useState } from "react";
-import { changeHash, normalize } from "./utils/router";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import HomePage from "./pages/HomePage";
 
-const routeTable: string[] = ["", "home", "settings"];
-
 export default function App() {
-  const [panel, setPanel] = useState<string>("home");
-  const [innerRoute, setInnerRoute] = useState<[string[], string[]]>([[], []]);
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      const rawHash = window.location.hash;
-      const [location, attributes] = normalize(rawHash);
-
-      const currentLocation = location[0];
-
-      if (!routeTable.includes(currentLocation)) {
-        changeHash("home");
-        setPanel("home");
-        setInnerRoute([[], []]);
-        return;
-      }
-
-      setPanel(location[0]);
-      setInnerRoute([location.slice(1), attributes]);
-    };
-
-    window.addEventListener("hashchange", handleHashChange);
-    window.addEventListener("load", handleHashChange);
-
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-      window.removeEventListener("load", handleHashChange);
-    };
-  }, []);
-
   return (
-    <>
+    <div id="app">
       <div className="panel-container">
-        {panel === "home" && <HomePage route={innerRoute} />}
-        {/* {panel === "settings" && <SettingsPage />} */}
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home/*" element={<HomePage />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
+        </Routes>
       </div>
-    </>
+    </div>
   );
 }
