@@ -1,38 +1,21 @@
 import "./style.css";
 
-import { useEffect, useState } from "react";
-import { changeHash, type InnerRoute } from "../../utils/router";
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import ToggleButton from "../../components/ToggleButton";
 import OptionButton from "../../components/OptionButton";
-
 import ModernTable from "./ModernTable";
 import TriadsTable from "./TriadsTable";
 import OctavesTable from "./OctavesTable";
 
-const routes = ["modern", "mandeleevs", "triads", "octaves"];
-
-interface HomePageProps {
-  route: InnerRoute;
-}
-
-export default function HomePage({ route }: HomePageProps) {
+export default function HomePage() {
   const [dropdownOpen, setDropdown] = useState(false);
 
-  const [location, attribute] = route;
+  const location = useLocation();
 
-  const panel = location[0] || "modern";
-
-  const innerRoute: InnerRoute = [location.slice(1), attribute];
-
-  useEffect(() => {
-    const panel = location[0] || "";
-
-    if (!routes.includes(panel)) {
-      changeHash("home/modern");
-      return;
-    }
-  }, [location]);
+  const pathParts = location.pathname.split("/").filter(Boolean);
+  const panel = pathParts[1] || "modern";
 
   return (
     <div id="home-page" className="app-panel">
@@ -77,7 +60,7 @@ export default function HomePage({ route }: HomePageProps) {
         </div>
       </div>
       <div className="panel-content">
-        {panel == "modern" && <ModernTable route={innerRoute} />}
+        {panel == "modern" && <ModernTable />}
         {panel == "triads" && <TriadsTable />}
         {panel == "octaves" && <OctavesTable />}
       </div>
